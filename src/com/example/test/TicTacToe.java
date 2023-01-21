@@ -59,25 +59,8 @@ public class TicTacToe implements ActionListener
       //Adding elements to the Frame
       frame.add(titlePanel,BorderLayout.NORTH);
       frame.add(buttonPanel);
-        
-      //Set Starting Token
-      buttons[0].setForeground(new Color(255, 0, 0));
-      buttons[0].setText("X");
-      buttons[2].setForeground(new Color(255, 0, 0));
-      buttons[2].setText("X");
-      buttons[13].setForeground(new Color(255, 0, 0));
-      buttons[13].setText("X");
-      buttons[15].setForeground(new Color(255, 0, 0));
-      buttons[15].setText("X");
-      buttons[1].setForeground(new Color(0, 0, 255));
-      buttons[1].setText("O");
-      buttons[3].setForeground(new Color(0, 0, 255));
-      buttons[3].setText("O");
-      buttons[12].setForeground(new Color(0, 0, 255));
-      buttons[12].setText("O");
-      buttons[14].setForeground(new Color(0, 0, 255));
-      buttons[14].setText("O");
-
+      
+      initialize();
       firstTurn();
       
    }
@@ -1144,7 +1127,28 @@ public class TicTacToe implements ActionListener
       check();
    }
 
+   public void initialize(){
+      //Set Starting Token
+      buttons[0].setForeground(new Color(255, 0, 0));
+      buttons[0].setText("X");
+      buttons[2].setForeground(new Color(255, 0, 0));
+      buttons[2].setText("X");
+      buttons[13].setForeground(new Color(255, 0, 0));
+      buttons[13].setText("X");
+      buttons[15].setForeground(new Color(255, 0, 0));
+      buttons[15].setText("X");
+      buttons[1].setForeground(new Color(0, 0, 255));
+      buttons[1].setText("O");
+      buttons[3].setForeground(new Color(0, 0, 255));
+      buttons[3].setText("O");
+      buttons[12].setForeground(new Color(0, 0, 255));
+      buttons[12].setText("O");
+      buttons[14].setForeground(new Color(0, 0, 255));
+      buttons[14].setText("O");
+   }
+
    public void firstTurn()
+
    {
    
         for(int j = 0; j < 16; j++)
@@ -1183,6 +1187,18 @@ public class TicTacToe implements ActionListener
                   buttons[j].setEnabled(false);
             }
         }
+   }
+
+   public void resetgame(){
+
+      for(int i = 0; i < buttons.length; i++)
+      {
+         buttons[i].setBackground(new Color(255, 255, 255));
+         buttons[i].setText("");
+      }
+      
+      initialize();
+      firstTurn();
    }
 
    public void check()
@@ -1486,33 +1502,50 @@ public class TicTacToe implements ActionListener
    {
 
    //Set winner X background to green color
-        buttons[a].setBackground(Color.GREEN);
-        buttons[b].setBackground(Color.GREEN);
-        buttons[c].setBackground(Color.GREEN);
+      buttons[a].setBackground(Color.GREEN);
+      buttons[b].setBackground(Color.GREEN);
+      buttons[c].setBackground(Color.GREEN);
 
-        for(int i = 0; i < buttons.length; i++)
-        {
-            buttons[i].setEnabled(false);
-        }
+      for(int i = 0; i < buttons.length; i++)
+      {
+         buttons[i].setEnabled(false);
+      }
 
-        textField.setText("X wins");
+      textField.setText("X wins");
 
-    }
+      // Restart or Quit
+      JOptionPane pane = new JOptionPane();
+      int dialogResult = JOptionPane.showConfirmDialog(pane, "X wins! Would you like to play again?","Play Again?", JOptionPane.YES_NO_OPTION);
+            
+      if(dialogResult == JOptionPane.YES_OPTION)
+         resetgame();
+      else System.exit(0);
+   
+   }
+      
 
     public void oWins(int a, int b, int c)
     {
 
     //Set winner O background to green color
-        buttons[a].setBackground(Color.GREEN);
-        buttons[b].setBackground(Color.GREEN);
-        buttons[c].setBackground(Color.GREEN);
+      buttons[a].setBackground(Color.GREEN);
+      buttons[b].setBackground(Color.GREEN);
+      buttons[c].setBackground(Color.GREEN);
 
-        for(int i = 0; i < buttons.length; i++)
-        {
-            buttons[i].setEnabled(false);
-        }
+      for(int i = 0; i < buttons.length; i++)
+      {
+         buttons[i].setEnabled(false);
+      }
 
-        textField.setText("O wins");
+      textField.setText("O wins");
+
+      // Restart or Quit
+      JOptionPane pane = new JOptionPane();
+      int dialogResult = JOptionPane.showConfirmDialog(pane, "O wins! Would you like to play again?","Play Again?", JOptionPane.YES_NO_OPTION);
+               
+      if(dialogResult == JOptionPane.YES_OPTION)
+         resetgame();
+      else System.exit(0);
 
     }
     
