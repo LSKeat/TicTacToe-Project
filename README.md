@@ -1,3 +1,3 @@
 # TicTacToe-Project
 
-This is improvements of TicTacToe game in github.
+This is improvements of TicTacToe game on Github.
