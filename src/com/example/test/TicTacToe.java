@@ -508,7 +508,7 @@ public class TicTacToe implements ActionListener
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
+                        buttons[13].setEnabled(true);
                      }
                   }
                   if (firstClick == 13)
@@ -1044,7 +1044,7 @@ public class TicTacToe implements ActionListener
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
+                        buttons[13].setEnabled(true);
                      }
                   }
                   if (firstClick == 13)
