@@ -28,6 +28,7 @@ public class TicTacToe implements ActionListener
       frame.getContentPane().setBackground(new Color(50,50,50));
       frame.setLayout(new BorderLayout());
       frame.setVisible(true);
+      frame.setLocationRelativeTo(null);
 
       // Set Label parameters (text)
       textField.setBackground(new Color(25,25,25));
@@ -60,6 +61,8 @@ public class TicTacToe implements ActionListener
       frame.add(titlePanel,BorderLayout.NORTH);
       frame.add(buttonPanel);
       
+      JOptionPane.showMessageDialog(null, "Select and Move any pieces horizontally or vertically.\nYou may not move diagonally or jump over oppenent's pieces.\nWinning: The winner is the first player to achieve three-in-a-row.", "How To Play", JOptionPane.INFORMATION_MESSAGE);
+
       initialize();
       firstTurn();
       
@@ -127,11 +130,11 @@ public class TicTacToe implements ActionListener
                         buttons[4].setBackground(new Color(0, 255, 255));
                         buttons[4].setEnabled(true);
                      }
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 1)
                   {
@@ -146,21 +149,21 @@ public class TicTacToe implements ActionListener
                         buttons[2].setEnabled(true);
                      }
 
-                     if (buttons[4].getText() == "")
-                     {
-                        buttons[4].setBackground(new Color(0, 255, 255));
-                        buttons[4].setEnabled(true);
-                     }
+                     // if (buttons[4].getText() == "")
+//                      {
+//                         buttons[4].setBackground(new Color(0, 255, 255));
+//                         buttons[4].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
                         buttons[5].setEnabled(true);
                      }
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+                     // if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 2)
                   {
@@ -175,21 +178,21 @@ public class TicTacToe implements ActionListener
                         buttons[3].setEnabled(true);
                      }
 
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                      if (buttons[6].getText() == "")
                      {
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[7].getText() == "")
-                     {
-                        buttons[7].setBackground(new Color(0, 255, 255));
-                        buttons[7].setEnabled(true);
-                     }
+                     // if (buttons[7].getText() == "")
+//                      {
+//                         buttons[7].setBackground(new Color(0, 255, 255));
+//                         buttons[7].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 3)
                   {
@@ -198,11 +201,11 @@ public class TicTacToe implements ActionListener
                         buttons[2].setBackground(new Color(0, 255, 255));
                         buttons[2].setEnabled(true);
                      }
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+//                      if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                      if (buttons[7].getText() == "")
                      {
                         buttons[7].setBackground(new Color(0, 255, 255));
@@ -216,11 +219,11 @@ public class TicTacToe implements ActionListener
                         buttons[0].setBackground(new Color(0, 255, 255));
                         buttons[0].setEnabled(true);
                      }
-                     if (buttons[1].getText() == "")
-                     {
-                        buttons[1].setBackground(new Color(0, 255, 255));
-                        buttons[1].setEnabled(true);
-                     }
+                     // if (buttons[1].getText() == "")
+//                      {
+//                         buttons[1].setBackground(new Color(0, 255, 255));
+//                         buttons[1].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
@@ -231,29 +234,29 @@ public class TicTacToe implements ActionListener
                         buttons[8].setBackground(new Color(0, 255, 255));
                         buttons[8].setEnabled(true);
                      }
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                     // if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 5)
                   {
-                     if (buttons[0].getText() == "")
-                     {
-                        buttons[0].setBackground(new Color(0, 255, 255));
-                        buttons[0].setEnabled(true);
-                     }
+                     // if (buttons[0].getText() == "")
+//                      {
+//                         buttons[0].setBackground(new Color(0, 255, 255));
+//                         buttons[0].setEnabled(true);
+//                      }
                      if (buttons[1].getText() == "")
                      {
                         buttons[1].setBackground(new Color(0, 255, 255));
                         buttons[1].setEnabled(true);
                      }
-                     if (buttons[2].getText() == "")
-                     {
-                        buttons[2].setBackground(new Color(0, 255, 255));
-                        buttons[2].setEnabled(true);
-                     }
+                     // if (buttons[2].getText() == "")
+//                      {
+//                         buttons[2].setBackground(new Color(0, 255, 255));
+//                         buttons[2].setEnabled(true);
+//                      }
                      if (buttons[4].getText() == "")
                      {
                         buttons[4].setBackground(new Color(0, 255, 255));
@@ -264,39 +267,39 @@ public class TicTacToe implements ActionListener
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[8].getText() == "")
-                     {
-                        buttons[8].setBackground(new Color(0, 255, 255));
-                        buttons[8].setEnabled(true);
-                     }
+                     // if (buttons[8].getText() == "")
+//                      {
+//                         buttons[8].setBackground(new Color(0, 255, 255));
+//                         buttons[8].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
                         buttons[9].setEnabled(true);
                      }
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                     // if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 6)
                   {
-                     if (buttons[1].getText() == "")
-                     {
-                        buttons[1].setBackground(new Color(0, 255, 255));
-                        buttons[1].setEnabled(true);
-                     }
+                     // if (buttons[1].getText() == "")
+//                      {
+//                         buttons[1].setBackground(new Color(0, 255, 255));
+//                         buttons[1].setEnabled(true);
+//                      }
                      if (buttons[2].getText() == "")
                      {
                         buttons[2].setBackground(new Color(0, 255, 255));
                         buttons[2].setEnabled(true);
                      }
-                     if (buttons[3].getText() == "")
-                     {
-                        buttons[3].setBackground(new Color(0, 255, 255));
-                        buttons[3].setEnabled(true);
-                     }
+                     // if (buttons[3].getText() == "")
+//                      {
+//                         buttons[3].setBackground(new Color(0, 255, 255));
+//                         buttons[3].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
@@ -307,29 +310,29 @@ public class TicTacToe implements ActionListener
                         buttons[7].setBackground(new Color(0, 255, 255));
                         buttons[7].setEnabled(true);
                      }
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                     // if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                      if (buttons[10].getText() == "")
                      {
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[11].getText() == "")
-                     {
-                        buttons[11].setBackground(new Color(0, 255, 255));
-                        buttons[11].setEnabled(true);
-                     }
+                     // if (buttons[11].getText() == "")
+//                      {
+//                         buttons[11].setBackground(new Color(0, 255, 255));
+//                         buttons[11].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 7)
                   {
-                     if (buttons[2].getText() == "")
-                     {
-                        buttons[2].setBackground(new Color(0, 255, 255));
-                        buttons[2].setEnabled(true);
-                     }
+                     // if (buttons[2].getText() == "")
+//                      {
+//                         buttons[2].setBackground(new Color(0, 255, 255));
+//                         buttons[2].setEnabled(true);
+//                      }
                      if (buttons[3].getText() == "")
                      {
                         buttons[3].setBackground(new Color(0, 255, 255));
@@ -340,11 +343,11 @@ public class TicTacToe implements ActionListener
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                     // if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                      if (buttons[11].getText() == "")
                      {
                         buttons[11].setBackground(new Color(0, 255, 255));
@@ -358,11 +361,11 @@ public class TicTacToe implements ActionListener
                         buttons[4].setBackground(new Color(0, 255, 255));
                         buttons[4].setEnabled(true);
                      }
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
@@ -373,29 +376,29 @@ public class TicTacToe implements ActionListener
                         buttons[12].setBackground(new Color(0, 255, 255));
                         buttons[12].setEnabled(true);
                      }
-                     if (buttons[13].getText() == "")
-                     {
-                        buttons[13].setBackground(new Color(0, 255, 255));
-                        buttons[13].setEnabled(true);
-                     }
+                     // if (buttons[13].getText() == "")
+//                      {
+//                         buttons[13].setBackground(new Color(0, 255, 255));
+//                         buttons[13].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 9)
                   {
-                     if (buttons[4].getText() == "")
-                     {
-                        buttons[4].setBackground(new Color(0, 255, 255));
-                        buttons[4].setEnabled(true);
-                     }
+                     // if (buttons[4].getText() == "")
+//                      {
+//                         buttons[4].setBackground(new Color(0, 255, 255));
+//                         buttons[4].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
                         buttons[5].setEnabled(true);
                      }
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+                     // if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                      if (buttons[8].getText() == "")
                      {
                         buttons[8].setBackground(new Color(0, 255, 255));
@@ -406,39 +409,39 @@ public class TicTacToe implements ActionListener
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[12].getText() == "")
-                     {
-                        buttons[12].setBackground(new Color(0, 255, 255));
-                        buttons[12].setEnabled(true);
-                     }
+                    //  if (buttons[12].getText() == "")
+//                      {
+//                         buttons[12].setBackground(new Color(0, 255, 255));
+//                         buttons[12].setEnabled(true);
+//                      }
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
                         buttons[13].setEnabled(true);
                      }
-                     if (buttons[14].getText() == "")
-                     {
-                        buttons[14].setBackground(new Color(0, 255, 255));
-                        buttons[14].setEnabled(true);
-                     }
+                     // if (buttons[14].getText() == "")
+//                      {
+//                         buttons[14].setBackground(new Color(0, 255, 255));
+//                         buttons[14].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 10)
                   {
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                      if (buttons[6].getText() == "")
                      {
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[7].getText() == "")
-                     {
-                        buttons[7].setBackground(new Color(0, 255, 255));
-                        buttons[7].setEnabled(true);
-                     }
+                     // if (buttons[7].getText() == "")
+//                      {
+//                         buttons[7].setBackground(new Color(0, 255, 255));
+//                         buttons[7].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
@@ -449,29 +452,29 @@ public class TicTacToe implements ActionListener
                         buttons[11].setBackground(new Color(0, 255, 255));
                         buttons[11].setEnabled(true);
                      }
-                     if (buttons[13].getText() == "")
-                     {
-                        buttons[13].setBackground(new Color(0, 255, 255));
-                        buttons[13].setEnabled(true);
-                     }
+                     // if (buttons[13].getText() == "")
+//                      {
+//                         buttons[13].setBackground(new Color(0, 255, 255));
+//                         buttons[13].setEnabled(true);
+//                      }
                      if (buttons[14].getText() == "")
                      {
                         buttons[14].setBackground(new Color(0, 255, 255));
                         buttons[14].setEnabled(true);
                      }
-                     if (buttons[15].getText() == "")
-                     {
-                        buttons[15].setBackground(new Color(0, 255, 255));
-                        buttons[15].setEnabled(true);
-                     }
+                     // if (buttons[15].getText() == "")
+//                      {
+//                         buttons[15].setBackground(new Color(0, 255, 255));
+//                         buttons[15].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 11)
                   {
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+                     // if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                      if (buttons[7].getText() == "")
                      {
                         buttons[7].setBackground(new Color(0, 255, 255));
@@ -482,11 +485,11 @@ public class TicTacToe implements ActionListener
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[14].getText() == "")
-                     {
-                        buttons[14].setBackground(new Color(0, 255, 255));
-                        buttons[14].setEnabled(true);
-                     }
+                   //   if (buttons[14].getText() == "")
+//                      {
+//                         buttons[14].setBackground(new Color(0, 255, 255));
+//                         buttons[14].setEnabled(true);
+//                      }
                      if (buttons[15].getText() == "")
                      {
                         buttons[15].setBackground(new Color(0, 255, 255));
@@ -500,11 +503,11 @@ public class TicTacToe implements ActionListener
                         buttons[8].setBackground(new Color(0, 255, 255));
                         buttons[8].setEnabled(true);
                      }
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                     // if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
@@ -513,21 +516,21 @@ public class TicTacToe implements ActionListener
                   }
                   if (firstClick == 13)
                   {
-                     if (buttons[8].getText() == "")
-                     {
-                        buttons[8].setBackground(new Color(0, 255, 255));
-                        buttons[8].setEnabled(true);
-                     }
+                    //  if (buttons[8].getText() == "")
+//                      {
+//                         buttons[8].setBackground(new Color(0, 255, 255));
+//                         buttons[8].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
                         buttons[9].setEnabled(true);
                      }
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                    //  if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                      if (buttons[12].getText() == "")
                      {
                         buttons[12].setBackground(new Color(0, 255, 255));
@@ -541,21 +544,21 @@ public class TicTacToe implements ActionListener
                   }
                   if (firstClick == 14)
                   {
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                    //  if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                      if (buttons[10].getText() == "")
                      {
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[11].getText() == "")
-                     {
-                        buttons[11].setBackground(new Color(0, 255, 255));
-                        buttons[11].setEnabled(true);
-                     }
+                    //  if (buttons[11].getText() == "")
+//                      {
+//                         buttons[11].setBackground(new Color(0, 255, 255));
+//                         buttons[11].setEnabled(true);
+//                      }
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
@@ -569,11 +572,11 @@ public class TicTacToe implements ActionListener
                   }
                   if (firstClick == 15)
                   {
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                     // if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                      if (buttons[11].getText() == "")
                      {
                         buttons[11].setBackground(new Color(0, 255, 255));
@@ -663,11 +666,11 @@ public class TicTacToe implements ActionListener
                         buttons[4].setBackground(new Color(0, 255, 255));
                         buttons[4].setEnabled(true);
                      }
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 1)
                   {
@@ -682,21 +685,21 @@ public class TicTacToe implements ActionListener
                         buttons[2].setEnabled(true);
                      }
 
-                     if (buttons[4].getText() == "")
-                     {
-                        buttons[4].setBackground(new Color(0, 255, 255));
-                        buttons[4].setEnabled(true);
-                     }
+                     // if (buttons[4].getText() == "")
+//                      {
+//                         buttons[4].setBackground(new Color(0, 255, 255));
+//                         buttons[4].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
                         buttons[5].setEnabled(true);
                      }
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+                     // if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 2)
                   {
@@ -711,21 +714,21 @@ public class TicTacToe implements ActionListener
                         buttons[3].setEnabled(true);
                      }
 
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                      if (buttons[6].getText() == "")
                      {
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[7].getText() == "")
-                     {
-                        buttons[7].setBackground(new Color(0, 255, 255));
-                        buttons[7].setEnabled(true);
-                     }
+                     // if (buttons[7].getText() == "")
+//                      {
+//                         buttons[7].setBackground(new Color(0, 255, 255));
+//                         buttons[7].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 3)
                   {
@@ -734,11 +737,11 @@ public class TicTacToe implements ActionListener
                         buttons[2].setBackground(new Color(0, 255, 255));
                         buttons[2].setEnabled(true);
                      }
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+//                      if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                      if (buttons[7].getText() == "")
                      {
                         buttons[7].setBackground(new Color(0, 255, 255));
@@ -752,11 +755,11 @@ public class TicTacToe implements ActionListener
                         buttons[0].setBackground(new Color(0, 255, 255));
                         buttons[0].setEnabled(true);
                      }
-                     if (buttons[1].getText() == "")
-                     {
-                        buttons[1].setBackground(new Color(0, 255, 255));
-                        buttons[1].setEnabled(true);
-                     }
+                     // if (buttons[1].getText() == "")
+//                      {
+//                         buttons[1].setBackground(new Color(0, 255, 255));
+//                         buttons[1].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
@@ -767,29 +770,29 @@ public class TicTacToe implements ActionListener
                         buttons[8].setBackground(new Color(0, 255, 255));
                         buttons[8].setEnabled(true);
                      }
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                     // if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 5)
                   {
-                     if (buttons[0].getText() == "")
-                     {
-                        buttons[0].setBackground(new Color(0, 255, 255));
-                        buttons[0].setEnabled(true);
-                     }
+                     // if (buttons[0].getText() == "")
+//                      {
+//                         buttons[0].setBackground(new Color(0, 255, 255));
+//                         buttons[0].setEnabled(true);
+//                      }
                      if (buttons[1].getText() == "")
                      {
                         buttons[1].setBackground(new Color(0, 255, 255));
                         buttons[1].setEnabled(true);
                      }
-                     if (buttons[2].getText() == "")
-                     {
-                        buttons[2].setBackground(new Color(0, 255, 255));
-                        buttons[2].setEnabled(true);
-                     }
+                     // if (buttons[2].getText() == "")
+//                      {
+//                         buttons[2].setBackground(new Color(0, 255, 255));
+//                         buttons[2].setEnabled(true);
+//                      }
                      if (buttons[4].getText() == "")
                      {
                         buttons[4].setBackground(new Color(0, 255, 255));
@@ -800,39 +803,39 @@ public class TicTacToe implements ActionListener
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[8].getText() == "")
-                     {
-                        buttons[8].setBackground(new Color(0, 255, 255));
-                        buttons[8].setEnabled(true);
-                     }
+                     // if (buttons[8].getText() == "")
+//                      {
+//                         buttons[8].setBackground(new Color(0, 255, 255));
+//                         buttons[8].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
                         buttons[9].setEnabled(true);
                      }
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                     // if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 6)
                   {
-                     if (buttons[1].getText() == "")
-                     {
-                        buttons[1].setBackground(new Color(0, 255, 255));
-                        buttons[1].setEnabled(true);
-                     }
+                     // if (buttons[1].getText() == "")
+//                      {
+//                         buttons[1].setBackground(new Color(0, 255, 255));
+//                         buttons[1].setEnabled(true);
+//                      }
                      if (buttons[2].getText() == "")
                      {
                         buttons[2].setBackground(new Color(0, 255, 255));
                         buttons[2].setEnabled(true);
                      }
-                     if (buttons[3].getText() == "")
-                     {
-                        buttons[3].setBackground(new Color(0, 255, 255));
-                        buttons[3].setEnabled(true);
-                     }
+                     // if (buttons[3].getText() == "")
+//                      {
+//                         buttons[3].setBackground(new Color(0, 255, 255));
+//                         buttons[3].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
@@ -843,29 +846,29 @@ public class TicTacToe implements ActionListener
                         buttons[7].setBackground(new Color(0, 255, 255));
                         buttons[7].setEnabled(true);
                      }
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                     // if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                      if (buttons[10].getText() == "")
                      {
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[11].getText() == "")
-                     {
-                        buttons[11].setBackground(new Color(0, 255, 255));
-                        buttons[11].setEnabled(true);
-                     }
+                     // if (buttons[11].getText() == "")
+//                      {
+//                         buttons[11].setBackground(new Color(0, 255, 255));
+//                         buttons[11].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 7)
                   {
-                     if (buttons[2].getText() == "")
-                     {
-                        buttons[2].setBackground(new Color(0, 255, 255));
-                        buttons[2].setEnabled(true);
-                     }
+                     // if (buttons[2].getText() == "")
+//                      {
+//                         buttons[2].setBackground(new Color(0, 255, 255));
+//                         buttons[2].setEnabled(true);
+//                      }
                      if (buttons[3].getText() == "")
                      {
                         buttons[3].setBackground(new Color(0, 255, 255));
@@ -876,11 +879,11 @@ public class TicTacToe implements ActionListener
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                     // if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                      if (buttons[11].getText() == "")
                      {
                         buttons[11].setBackground(new Color(0, 255, 255));
@@ -894,11 +897,11 @@ public class TicTacToe implements ActionListener
                         buttons[4].setBackground(new Color(0, 255, 255));
                         buttons[4].setEnabled(true);
                      }
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
@@ -909,29 +912,29 @@ public class TicTacToe implements ActionListener
                         buttons[12].setBackground(new Color(0, 255, 255));
                         buttons[12].setEnabled(true);
                      }
-                     if (buttons[13].getText() == "")
-                     {
-                        buttons[13].setBackground(new Color(0, 255, 255));
-                        buttons[13].setEnabled(true);
-                     }
+                     // if (buttons[13].getText() == "")
+//                      {
+//                         buttons[13].setBackground(new Color(0, 255, 255));
+//                         buttons[13].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 9)
                   {
-                     if (buttons[4].getText() == "")
-                     {
-                        buttons[4].setBackground(new Color(0, 255, 255));
-                        buttons[4].setEnabled(true);
-                     }
+                     // if (buttons[4].getText() == "")
+//                      {
+//                         buttons[4].setBackground(new Color(0, 255, 255));
+//                         buttons[4].setEnabled(true);
+//                      }
                      if (buttons[5].getText() == "")
                      {
                         buttons[5].setBackground(new Color(0, 255, 255));
                         buttons[5].setEnabled(true);
                      }
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+                     // if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                      if (buttons[8].getText() == "")
                      {
                         buttons[8].setBackground(new Color(0, 255, 255));
@@ -942,39 +945,39 @@ public class TicTacToe implements ActionListener
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[12].getText() == "")
-                     {
-                        buttons[12].setBackground(new Color(0, 255, 255));
-                        buttons[12].setEnabled(true);
-                     }
+                    //  if (buttons[12].getText() == "")
+//                      {
+//                         buttons[12].setBackground(new Color(0, 255, 255));
+//                         buttons[12].setEnabled(true);
+//                      }
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
                         buttons[13].setEnabled(true);
                      }
-                     if (buttons[14].getText() == "")
-                     {
-                        buttons[14].setBackground(new Color(0, 255, 255));
-                        buttons[14].setEnabled(true);
-                     }
+                     // if (buttons[14].getText() == "")
+//                      {
+//                         buttons[14].setBackground(new Color(0, 255, 255));
+//                         buttons[14].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 10)
                   {
-                     if (buttons[5].getText() == "")
-                     {
-                        buttons[5].setBackground(new Color(0, 255, 255));
-                        buttons[5].setEnabled(true);
-                     }
+                     // if (buttons[5].getText() == "")
+//                      {
+//                         buttons[5].setBackground(new Color(0, 255, 255));
+//                         buttons[5].setEnabled(true);
+//                      }
                      if (buttons[6].getText() == "")
                      {
                         buttons[6].setBackground(new Color(0, 255, 255));
                         buttons[6].setEnabled(true);
                      }
-                     if (buttons[7].getText() == "")
-                     {
-                        buttons[7].setBackground(new Color(0, 255, 255));
-                        buttons[7].setEnabled(true);
-                     }
+                     // if (buttons[7].getText() == "")
+//                      {
+//                         buttons[7].setBackground(new Color(0, 255, 255));
+//                         buttons[7].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
@@ -985,29 +988,29 @@ public class TicTacToe implements ActionListener
                         buttons[11].setBackground(new Color(0, 255, 255));
                         buttons[11].setEnabled(true);
                      }
-                     if (buttons[13].getText() == "")
-                     {
-                        buttons[13].setBackground(new Color(0, 255, 255));
-                        buttons[13].setEnabled(true);
-                     }
+                     // if (buttons[13].getText() == "")
+//                      {
+//                         buttons[13].setBackground(new Color(0, 255, 255));
+//                         buttons[13].setEnabled(true);
+//                      }
                      if (buttons[14].getText() == "")
                      {
                         buttons[14].setBackground(new Color(0, 255, 255));
                         buttons[14].setEnabled(true);
                      }
-                     if (buttons[15].getText() == "")
-                     {
-                        buttons[15].setBackground(new Color(0, 255, 255));
-                        buttons[15].setEnabled(true);
-                     }
+                     // if (buttons[15].getText() == "")
+//                      {
+//                         buttons[15].setBackground(new Color(0, 255, 255));
+//                         buttons[15].setEnabled(true);
+//                      }
                   }
                   if (firstClick == 11)
                   {
-                     if (buttons[6].getText() == "")
-                     {
-                        buttons[6].setBackground(new Color(0, 255, 255));
-                        buttons[6].setEnabled(true);
-                     }
+                     // if (buttons[6].getText() == "")
+//                      {
+//                         buttons[6].setBackground(new Color(0, 255, 255));
+//                         buttons[6].setEnabled(true);
+//                      }
                      if (buttons[7].getText() == "")
                      {
                         buttons[7].setBackground(new Color(0, 255, 255));
@@ -1018,11 +1021,11 @@ public class TicTacToe implements ActionListener
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[14].getText() == "")
-                     {
-                        buttons[14].setBackground(new Color(0, 255, 255));
-                        buttons[14].setEnabled(true);
-                     }
+                   //   if (buttons[14].getText() == "")
+//                      {
+//                         buttons[14].setBackground(new Color(0, 255, 255));
+//                         buttons[14].setEnabled(true);
+//                      }
                      if (buttons[15].getText() == "")
                      {
                         buttons[15].setBackground(new Color(0, 255, 255));
@@ -1036,11 +1039,11 @@ public class TicTacToe implements ActionListener
                         buttons[8].setBackground(new Color(0, 255, 255));
                         buttons[8].setEnabled(true);
                      }
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                     // if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
@@ -1049,21 +1052,21 @@ public class TicTacToe implements ActionListener
                   }
                   if (firstClick == 13)
                   {
-                     if (buttons[8].getText() == "")
-                     {
-                        buttons[8].setBackground(new Color(0, 255, 255));
-                        buttons[8].setEnabled(true);
-                     }
+                    //  if (buttons[8].getText() == "")
+//                      {
+//                         buttons[8].setBackground(new Color(0, 255, 255));
+//                         buttons[8].setEnabled(true);
+//                      }
                      if (buttons[9].getText() == "")
                      {
                         buttons[9].setBackground(new Color(0, 255, 255));
                         buttons[9].setEnabled(true);
                      }
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                    //  if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                      if (buttons[12].getText() == "")
                      {
                         buttons[12].setBackground(new Color(0, 255, 255));
@@ -1077,21 +1080,21 @@ public class TicTacToe implements ActionListener
                   }
                   if (firstClick == 14)
                   {
-                     if (buttons[9].getText() == "")
-                     {
-                        buttons[9].setBackground(new Color(0, 255, 255));
-                        buttons[9].setEnabled(true);
-                     }
+                    //  if (buttons[9].getText() == "")
+//                      {
+//                         buttons[9].setBackground(new Color(0, 255, 255));
+//                         buttons[9].setEnabled(true);
+//                      }
                      if (buttons[10].getText() == "")
                      {
                         buttons[10].setBackground(new Color(0, 255, 255));
                         buttons[10].setEnabled(true);
                      }
-                     if (buttons[11].getText() == "")
-                     {
-                        buttons[11].setBackground(new Color(0, 255, 255));
-                        buttons[11].setEnabled(true);
-                     }
+                    //  if (buttons[11].getText() == "")
+//                      {
+//                         buttons[11].setBackground(new Color(0, 255, 255));
+//                         buttons[11].setEnabled(true);
+//                      }
                      if (buttons[13].getText() == "")
                      {
                         buttons[13].setBackground(new Color(0, 255, 255));
@@ -1105,11 +1108,11 @@ public class TicTacToe implements ActionListener
                   }
                   if (firstClick == 15)
                   {
-                     if (buttons[10].getText() == "")
-                     {
-                        buttons[10].setBackground(new Color(0, 255, 255));
-                        buttons[10].setEnabled(true);
-                     }
+                     // if (buttons[10].getText() == "")
+//                      {
+//                         buttons[10].setBackground(new Color(0, 255, 255));
+//                         buttons[10].setEnabled(true);
+//                      }
                      if (buttons[11].getText() == "")
                      {
                         buttons[11].setBackground(new Color(0, 255, 255));
